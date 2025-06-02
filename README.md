@@ -31,6 +31,7 @@ This project analyzes retail sales data from the popular Superstore dataset to d
 
 Sales by Product Category
 
+![image](https://github.com/user-attachments/assets/6f861fe4-cd6a-4e50-bd4e-7010e0d6958e)
 
 
 Profit by Region

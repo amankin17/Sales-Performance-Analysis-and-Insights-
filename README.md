@@ -44,6 +44,7 @@ Discount vs Profit Relationship
 
 Monthly Sales Trend
 
+![image](https://github.com/user-attachments/assets/443517d7-214c-46e0-8409-4281e947a041)
 
 
 Sales & Profit by Sub-Category

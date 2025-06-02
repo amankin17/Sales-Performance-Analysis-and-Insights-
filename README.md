@@ -1,165 +1,95 @@
-# Sales-Performance-Analysis-and-Insights-
-This project analyzes retail sales data from the Superstore dataset to extract key business insights that can help improve sales, profitability, and regional performance.
-Project Overview
+#  Sales Performance Analysis (Superstore Dataset)
 
-Project Title:
-Sales Performance Analysis: Retail Sales Dataset (Superstore)
+---
 
-Project Type:
-Business Analytics Portfolio
+##  Project Overview
 
-Main Tools Used:
+This project analyzes retail sales data from the popular Superstore dataset to derive actionable business insights that can help improve sales, profitability, and regional performance. The project showcases key business analytics skills using **Python (Pandas, Matplotlib, Seaborn)** for data exploration and visualization, along with **Power BI** for advanced interactive dashboards.
 
-Python (Pandas, Matplotlib, Seaborn)
+---
 
-Jupyter Notebook
+##  Business Objectives
 
-Excel / CSV 
+- Analyze sales and profit performance across product categories, sub-categories, regions, and states.
+- Identify underperforming regions and products.
+- Investigate the impact of discounting on profitability.
+- Uncover seasonal sales trends and patterns.
+- Create clear business insights and recommendations.
 
-Tableau or Power BI 
+---
+
+##  Tools & Technologies Used
+
+- Python (Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook)
+- Power BI (interactive dashboards)
+- Git / GitHub (version control and portfolio presentation)
+- Markdown (for documentation)
+
+---
+
+## Key Data Visualizations
+
+Sales by Product Category
+
+
+
+Profit by Region
+
+
+
+Discount vs Profit Relationship
+
+
+
+Monthly Sales Trend
+
+
+
+Sales & Profit by Sub-Category
 
 
 
 
 ---
 
-Dataset:
+Key Business Insights
 
-We will use the Superstore Sales Dataset, widely used for business analytics projects.
+ Technology category yields the highest profit margins.
 
-You can download it from:
-Kaggle Superstore Dataset: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
+ Western region contributes the highest revenue and profitability.
 
+ Higher discount rates often lead to negative profit margins.
 
+ Certain states (like Texas, Ohio, Pennsylvania) are underperforming in terms of profitability.
 
----
-
-Business Questions to Answer:
-
-Which product categories bring in the highest revenue and profit?
-
-Which regions are performing the best?
-
-Are there specific states that are underperforming?
-
-What is the relationship between discount and profit?
-
-Can we identify sales trends over time?
+ Clear seasonality observed in monthly sales trends — Q4 has consistently higher sales.
 
 
 
 ---
 
-README.md:
+Skills Demonstrated
 
-# Sales Performance Analysis
+Business problem framing & analytics
 
-## Overview
-This project analyzes sales data for a fictional Superstore company to derive business insights and help improve profitability.
+Data cleaning & preparation
 
-## Dataset
-- Source: Kaggle Superstore Dataset
-- Contains information on orders, sales, profits, regions, categories, shipping mode, and customer segments.
+Exploratory data analysis (EDA)
 
-## Tools Used
-- Python: Pandas, NumPy, Matplotlib, Seaborn
-- Tableau (optional): Advanced dashboards
-- Jupyter Notebook
+Data visualization & business storytelling
 
-## Key Analysis Areas
-- Sales and Profit Trends
-- Regional Performance
-- Product Category Analysis
-- Discount Impact on Profit
+SQL-style aggregation in Python (groupby, pivot)
 
-## Business Insights
-- Technology category yields the highest profit margins.
-- Western region contributes the highest revenue.
-- High discounts often correlate with reduced profit.
-- Some states are running at negative profits — action needed.
+KPI extraction for business users
 
-## Folder Structure
-- `data/`: Raw dataset.
-- `notebooks/`: Jupyter notebook with full analysis.
-- `visuals/`: Plots and charts used for storytelling.
-- `dashboard/`: Tableau or Power BI dashboards.
-- `requirements.txt`: Python libraries required.
+Interactive dashboard design with Power BI
 
-## Author
-Aman Bajpai — MSc Business Analytics
 
 
 ---
 
-The Analysis:
+Author
 
-# Import libraries
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-# Load data
-data = pd.read_csv('data/superstore_sales.csv')
-
-# Quick view
-print(data.head())
-print(data.info())
-print(data.describe())
-
-# Handle missing values
-data.dropna(inplace=True)
-
-# Sales by Category
-category_sales = data.groupby('Category')['Sales'].sum().sort_values(ascending=False)
-category_sales.plot(kind='bar', figsize=(8,6))
-plt.title("Sales by Product Category")
-plt.ylabel("Total Sales")
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.savefig('visuals/sales_by_category.png')
-plt.show()
-
-# Profit by Region
-region_profit = data.groupby('Region')['Profit'].sum().sort_values(ascending=False)
-region_profit.plot(kind='bar', figsize=(8,6), color='orange')
-plt.title("Profit by Region")
-plt.ylabel("Total Profit")
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.savefig('visuals/regional_sales.png')
-plt.show()
-
-# Discount vs Profit
-plt.figure(figsize=(8,6))
-sns.scatterplot(x='Discount', y='Profit', data=data)
-plt.title('Discount vs Profit')
-plt.savefig('visuals/profit_vs_discount.png')
-plt.show()
-
-# Time Series Sales Analysis
-data['Order Date'] = pd.to_datetime(data['Order Date'])
-monthly_sales = data.groupby(pd.Grouper(key='Order Date', freq='M'))['Sales'].sum()
-
-plt.figure(figsize=(10,6))
-monthly_sales.plot()
-plt.title("Monthly Sales Over Time")
-plt.ylabel("Sales")
-plt.xlabel("Order Date")
-plt.savefig('visuals/monthly_sales.png')
-plt.show()
-
-# Top 10 States by Loss
-state_profit = data.groupby('State')['Profit'].sum().sort_values()
-print(state_profit.head(10))
-
- Key Business Insights:
-
-Western region contributes highest profit.
-
-Technology segment is most profitable.
-
-Excessive discounts reduce profitability.
-
-Texas, Ohio and Pennsylvania show negative profits and need business intervention.
-
-Monthly sales show seasonal patterns (Q4 being highest sales volume).
+Aman Bajpai
+MSc Business Analytics, University of Galway
+📫 Email: bajpaiaman@gmail.com

@@ -39,6 +39,7 @@ Profit by Region
 
 Discount vs Profit Relationship
 
+![image](https://github.com/user-attachments/assets/70611724-aa92-4b7e-b605-d066903e1d38)
 
 
 Monthly Sales Trend
@@ -92,4 +93,4 @@ Author
 
 Aman Bajpai
 MSc Business Analytics, University of Galway
-📫 Email: bajpaiaman@gmail.com
+Email: bajpaiaman@gmail.com

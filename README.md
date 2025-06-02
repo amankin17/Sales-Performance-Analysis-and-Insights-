@@ -35,6 +35,7 @@ Sales by Product Category
 
 Profit by Region
 
+![image](https://github.com/user-attachments/assets/9c90f52f-652c-41f0-8b5f-bdc38e83a220)
 
 
 Discount vs Profit Relationship

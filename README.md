@@ -51,6 +51,7 @@ Monthly Sales Trend
 
 Sales & Profit by Sub-Category
 
+![image](https://github.com/user-attachments/assets/3d29c6f2-0233-4842-b65d-7b424f18fd02)
 
 
 
